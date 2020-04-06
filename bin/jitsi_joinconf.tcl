@@ -24,6 +24,7 @@ proc play_getdigits {soundfile {maxdigits 1} {wait 10000} } {
 set ::ygi::debug true
 
 ::ygi::play_wait "yintro"
+::ygi::sleep 500
 set conference_id [play_getdigits "$sounds/0_enter_id" 10]
 
 ::ygi::log "Conference id: $conference_id"
